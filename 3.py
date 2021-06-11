@@ -1,18 +1,15 @@
-#Escreva um programa que lê 15 valores reais, encontra o maior e o menor deles e mostra o resultado.
+peso = float(input("Insira seu peso: "))
+altura = float(input("Insira sua altura: "))
+IMC = round(peso/altura**2)
 
+if IMC < 18.5:
+    print(f"IMC: {IMC}kg/m² = Frango")
 
-menor = maior = 0
+elif IMC >= 18.5 and IMC < 25:
+    print(f"IMC: {IMC}kg/m² = fit")
 
-for contador in range(1, 15):
-    valor = float(input("Digite um valor: "))
+elif IMC >= 25 and IMC < 30:
+    print(f"IMC: {IMC}kg/m² = gordin")
 
-    if contador == 1:
-        maior = valor
-        menor = valor
-    else:
-        if valor > maior:
-            maior = valor
-        if valor < menor:
-            menor = valor
-
-print(f"O maior valor foi {maior} e o menor foi {menor}")
+elif IMC >= 30:
+    print(f"IMC: {IMC}kg/m² = bariátrica free")

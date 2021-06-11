@@ -1,4 +1,5 @@
-#Faca  um  programa  que  exiba  30  vezes  na  tela  a  mensagem  “Ola,  tudobem?
+a = int(30)
+b = int(40)
 
-for contador in range(1,30):
-    print("Olá, tudo bem?")
+soma = a + b
+print(soma)

@@ -1,5 +1,9 @@
-# Faca um programa que calcula e escreve a seguinte soma: soma = 1 / 1 + 3 / 2 + 5 / 3 + 7 / 4 + ... + 99 / 50
+#Faca um algoritmo que solicite um valor para o usuario, e gere a tabuada deste valor.
 
-for contador in range (1,10):
-    soma = 1/1
-    print(soma)
+valor = int(input("Escolha um valor de 1 - 10 para saber sua tabuada: "))
+
+
+for contador in range (1, 11):
+    tabuada = valor * contador
+    print(f'{valor} x {contador} = {tabuada}')
+    contador += 1

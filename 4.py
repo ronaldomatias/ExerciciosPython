@@ -1,55 +1,15 @@
-#Faca um programa para exibir a tabuada de 0 a 9.
+A = float(input("Valor 1: "))
+B = float(input("Valor 2: "))
+C = float(input("Valor 3: "))
+#equilátero = 3 LADOS IGUAIS  /  escaleno = 3 LADOS DIFERENTES   / isósceles = 2 LADOS IGUAIS.
 
-numero = 1
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__"*25)
+if A > B+C or B > A+C or C > A+B:
+    print("Triângulo não pode ser formado")
+else:
+    if A == B and A == C:
+        print("O triângulo é Equilátero")
+    elif A != B and A != C and B != C:
+        print("Triângulo Escaleno")
+    else:
+        print("Triângulo isósceles")
 
-numero = 2
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__"*25)
-
-numero = 3
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__" * 25)
-
-numero = 4
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__" * 25)
-
-numero = 5
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__" * 25)
-
-numero = 6
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__" * 25)
-
-numero = 7
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__" * 25)
-
-numero = 8
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__" * 25)
-
-numero = 9
-for contador in range (1,10):
-    tabuada_de = (numero*contador)
-    print(f"{numero}x{contador} = ", tabuada_de)
-print("__" * 25)

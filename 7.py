@@ -1,18 +1,8 @@
-#Dado um n ́umeroninteiro e positivo, dizemos que n ́e perfeito se n for igual `a soma de seus divisores positivos diferentes  de n.
+vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-numero = int(input("Digite um número para verificar se é perfeito: "))
-contador = 1
-soma = 0
-
-while (contador < numero):
-    if (numero%contador) == 0:
-        soma = soma + contador
-        contador = (contador +1)
-    else:
-        contador = (contador + 1)
-
-if soma == numero:
-    print("Numero é perfeito")
-else:
-    print("O número não é perfeito")
-
+soma_quadrados = 0
+for c in range (0, 10):
+    vetor_atual = (vetor[0+c])
+    quadrado = vetor_atual*vetor_atual
+    soma_quadrados += quadrado
+print(soma_quadrados)

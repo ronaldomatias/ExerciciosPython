@@ -1,11 +1,15 @@
-#Construa um algoritmo quecalcule e imprima quantos anos serao necessarios para que Ze seja maior que Chico.
+#Faca um programa que solicita ao usúario uma quantidade indeterminada de ńumeros inteiros e tira a média dos pares.
 
-tamanho_chico = float(1.5)
-tamanho_ze = float(1.1)
-contador_anos = 0
-while (tamanho_chico > tamanho_ze):
-    tamanho_ze += 0.3
-    tamanho_chico += 0.2
-    contador_anos += 1
-print(f"Será necessário {contador_anos} ano(s) para que Zé ultrapasse o tamanho de Chico.")
-print(f"O tamanho de Zé ficou {tamanho_ze:.2f} e o tamanho de Chico ficou {tamanho_chico:.2f}")
+valor = 1
+soma = 0
+contador = 0
+media = 0
+
+while valor != 0:
+    valor = int(input("Digite um valor inteiro (ou 0 para cancelar) : "))
+
+    if (valor%2 == 0) and (valor != 0):
+        soma += valor
+        contador += 1
+        media = (soma / contador)
+print("A média dos pontos pares foi de: ", media)
