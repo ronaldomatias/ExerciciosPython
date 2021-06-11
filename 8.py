@@ -1,6 +1,3 @@
-a = 3
-b = 2
-divide = int(a / b)
-
-print(divide)
-
+valores = [9, 3, 4]
+valores.sort() #.sort()   organiza os valores por ordem crescente.
+print(valores)

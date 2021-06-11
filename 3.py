@@ -1,5 +1,11 @@
-a = int(40)
-b = int(40)
-divisao = (a/b)
+num = float(input("Digite um número: "))
+num = int(num) %2
 
-print(divisao)
+if num == 1:
+    print("O número inserido é impar")
+
+if num == 0:
+    print("O número inserido é par")
+
+
+

@@ -1,5 +1,17 @@
-a = int(50)
-b = int(25)
-subtrai = (a-b)
+A = float(input("Digite um valor inteiro para A: "))
+B = float(input("Digite um valor inteiro para B: "))
+A = int(A)
+B = int(B)
+# se valor de A for igual B somar os dois.
+if A == B:
+    C = (A + B)
+    print(f"A+B= {C}c")
 
-print (subtrai)
+#se não.
+if A != B:
+    C = (A * B)
+    print(f"A*B= {C}c")
+
+
+
+

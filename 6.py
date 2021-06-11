@@ -1,12 +1,13 @@
-#entrada dos dados a e b
-a_str = input("Digite o primeiro numero:")
-b_str = input("Digite o segundo numero:")
+a = int(input("Número 1: "))
+b = int(input("Número 2: "))
+soma = a+b
 
-#conversão string-> inteiro
-a_int = int(a_str)
-b_int = int(b_str)
+if soma != 1:
+    print("False")
 
-#Soma entre valores convertidos em inteiro
-soma = (a_int + b_int)
+if soma == 1:
+    print("True")
 
-print(soma)
+
+
+
