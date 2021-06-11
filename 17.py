@@ -1,15 +1,12 @@
-nome = input("Nome do cliente: ")
-dias = int(input("Quantos dias o cliente ficou hospedado? "))
-diaria = 300
+repeticoes = int(input("Deseja ver quantos elementos da sequência de Fibonacci? "))
 
-if dias < 15: #taxa de 20,00 dia
-    total = (dias*diaria) + (20*dias)
-    print(f"{nome}, sua conta é de: {total}")
+num1 = 0
+num2 = 1
+contador = 1
 
-if dias == 15: #taxa de 14,00 dia
-    total = (dias*diaria) + (14*dias)
-    print(f"{nome}, sua conta é de: {total}")
-
-if dias > 15: #taxa de 20,00 dia
-    total = (dias*diaria) + (12*dias)
-    print(f"{nome}, sua conta é de: {total}")
+while contador <= repeticoes:
+    num3 = num1 + num2
+    print(f'{num1} ', end='')
+    num1 = num2
+    num2 = num3
+    contador += 1

@@ -1,41 +1,22 @@
-A = float(input("Digite o valor para A: "))
-B = float(input("Digite o valor para B: "))
-C = float(input("Digite o valor para C: "))
-D = float(input("Digite o valor para D: "))
-#quem é menor
-if A < B and A < C and A < D:
-    menor = A
+#Elabore um algoritmo  que leia  um conjunto indeterminado  de valores e informe, ao final, o maior e o menor valor lidos.
 
-if B < A and B < C and B < D:
-    menor = B
+valor = 1
+maior = menor = 0
+contador = 0
 
-if C < A and C < B and C < D:
-    menor = C
+while (valor > 0):
+    valor = float(input("Digite um valor acima de 0. Para cancelar digite um valor < 1: "))
+    if contador == 0:
+        maior = menor = valor
+        contador += 1
 
-if D < A and D < B and D < C:
-    menor = D
-#Quem é maior
-if A > B and A > C and A > D:
-    maior= A
+    elif (valor < menor) and valor > 0:
+        menor = valor
+        contador += 1
 
-if B > A and B > C and B > D:
-    maior = B
-
-if C > A and C > B and C > D:
-    maior = C
-
-if D > A and D > B and D > C:
-    maior = D
-
-print(f"O maior número foi: {maior} e o menor número foi: {menor}")
+    elif valor > maior:
+        maior = valor
+        contador += 1
 
 
-
-
-
-
-
-
-
-
-
+print(f"O maior foi: {maior}, e o menor foi: {menor}")

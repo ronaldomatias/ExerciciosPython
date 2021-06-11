@@ -1,17 +1,18 @@
-A = float(input("Valor 1: "))
-B = float(input("Valor 2: "))
-C = float(input("Valor 3: "))
-#equilátero = 3 LADOS IGUAIS  /  escaleno = 3 LADOS DIFERENTES   / isósceles = 2 LADOS IGUAIS.
+massa = 0
+while massa < 0.5:
+    massa = float(input("Digite a massa(gr) e maior que 0.5: "))
 
-if A < B+C and B < A+C and C < A+B:
-    print("Triângulo pode ser formado")
-    if A == B and A == C:
-        print("O triângulo é Equilátero")
-        if A != B and A != C and B != C:
-            print("O Triângulo é Isósceles")
-            if A != B and A != C and B != C:
-                print("Triângulo Escaleno")
+tempo = 0
+while (massa >=0.5):  #No 1º loop ele armazena massa em massa_inicial e a cada loop vai dividindo a massa por 2 até chegar em < 0.5.
+    tempo += 50
+    if tempo == 50:
+        massa_inicial = massa
+    massa = massa/2
 
-else:
-    print("Triângulo não pode ser formado")
+print("Massa inicial:", massa_inicial)
+print("Massa final:", massa)
+print(f"Levou: {(tempo/60)/60:.2f}horas, {tempo/60:.2f} min e {tempo} seg para que a massa/2 chegue abaixo de 0.5")
+
+
+
 

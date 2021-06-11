@@ -1,18 +1,20 @@
-valor = float(input("Valor do produto: "))
-tipo_pg = int(input("Forma de pagamento: \nDigite: 1, para pg à vista (dinheiro ou cheque) c/ 10% desc\nDigite: 2, para pg à vista (crédito) c/ 15% desc \nDigite: 3, para pg em 2x s/juros\n"))
+#Faca um programa que solicita ao usúario uma quantidade indeterminada de ńumeros inteiros e tira a média dos pares.
 
-if tipo_pg == 1: #var_tipo_pg = 1 (10%desc)
-    valor_final = (valor - (valor*10/100))
-    print(f"Sua compra foi de: R$ {valor_final}")
+valor = 1
+soma = 0
+contador = 0
+media = 0
 
-elif tipo_pg == 2: #var_tipo_pg = 2 (15%desc)
-    valor_final = (valor - ((valor*15)/100))
-    print(f"Sua compra foi de: R$ {valor_final}")
+while valor != 0:
+    valor = int(input("Digite um valor inteiro (ou 0 para cancelar) : "))
 
-elif tipo_pg == 3: #var_tipo_pg = 3 (2x s/juros)
-    valor_final = (valor)
-    valor2x = valor / 2
-    print(f"Sua compra foi de: R$ {valor_final} com 2x parcelas s/juros de R$ {valor2x}")
+    if (valor%2 == 0) and (valor != 0):
+        soma += valor
+        contador += 1
+        media = (soma / contador)
+print("A média dos pontos pares foi de: ", media)
 
-else:
-    print("Fim")
+
+
+
+

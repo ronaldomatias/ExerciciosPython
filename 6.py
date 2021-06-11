@@ -1,13 +1,10 @@
-a = int(input("Número 1: "))
-b = int(input("Número 2: "))
-soma = a+b
+#Faca  um  programa  que  calcula  o  produto  dos  numeros  digitados  pelo usuario.
 
-if soma != 1:
-    print("False")
+valor = 7
+produto = 1
 
-if soma == 1:
-    print("True")
-
-
-
-
+while (valor != 0):
+    valor = int(input("Digite um valor: "))
+    produto *= valor
+    print("O produto dos números inseridos é:", produto)
+    print("Digite 0 para encerrar ")

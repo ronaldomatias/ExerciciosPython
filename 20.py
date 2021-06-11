@@ -1,21 +1,15 @@
-valor = int(input("Digite um número (1-7): "))
+soma_pares = 0
+soma_impares = 0
+valor = 0
 
-if valor == 1:
-    print("Segunda-Feira")
-elif valor == 2:
-    print("Terça-Feira")
-elif valor == 3:
-    print("Quarta-Feira")
-elif valor == 4:
-    print("Quinta-Feira")
-elif valor == 5:
-    print("Sexta-Feira")
-elif valor == 6:
-    print("Sábadera")
-elif valor == 7:
-    print("Domingou")
+while valor <= 1000:
+    print("Para cancelar, insira um valor acima de 1000.")
+    valor = int(input("Digite um valor do tipo inteiro: "))
 
-else:
-    print("O Programa considera somente valores de 1 a 7")
+    if (valor%2 == 0) and (valor < 1000):
+        soma_pares = valor + soma_pares
+    if (valor%2 == 1) and (valor < 1000):
+        soma_impares = valor + soma_impares
 
-
+print("A soma dos pares foi: ", soma_pares)
+print("A soma dos ímpares foi: ", soma_impares)

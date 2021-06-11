@@ -1,9 +1,18 @@
-num = float(input("Digite um valor inteiro: "))
-num = int(num)
-num2 = int(num) %2
+#Dado um n ́umeroninteiro e positivo, dizemos que n ́e perfeito se n for igual `a soma de seus divisores positivos diferentes  de n.
 
-if num2 == 0: #se numero for par, somar +5.
-    print(num+5)
+numero = int(input("Digite um número para verificar se é perfeito: "))
+contador = 1
+soma = 0
 
-if num2 == 1: #se numero for impar, somar +8.
-    print(num+8)
+while (contador < numero):
+    if (numero%contador) == 0:
+        soma = soma + contador
+        contador = (contador +1)
+    else:
+        contador = (contador + 1)
+
+if soma == numero:
+    print("Numero é perfeito")
+else:
+    print("O número não é perfeito")
+
